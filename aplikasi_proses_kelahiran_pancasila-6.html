@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Proses Kelahiran Pancasila</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:#f4f7fb;color:#172033}
+header{background:linear-gradient(135deg,#c62828,#ef5350);color:white;padding:28px 20px;text-align:center}
+header h1{margin:0 0 8px;font-size:30px}
+header p{margin:0;opacity:.95}
+nav{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;background:white;padding:12px;position:sticky;top:0;z-index:5;box-shadow:0 2px 8px #0001}
+nav button{border:0;background:#f0f2f5;padding:10px 15px;border-radius:20px;cursor:pointer;font-weight:bold}
+nav button:hover{background:#ffcdd2}
+main{max-width:950px;margin:auto;padding:22px}
+.card{background:white;border-radius:18px;padding:22px;margin:16px 0;box-shadow:0 5px 18px #00000012}
+.hero{text-align:center}
+.hero .emoji{font-size:55px}
+.timeline{border-left:4px solid #d32f2f;margin:20px 0;padding-left:20px}
+.event{position:relative;margin:22px 0;padding:18px;background:#fff;border-radius:14px;box-shadow:0 3px 12px #0001}
+.event:before{content:"";position:absolute;left:-31px;top:22px;width:14px;height:14px;background:#d32f2f;border:4px solid #f4f7fb;border-radius:50%}
+.event h3{margin:0;color:#c62828}
+.badge{display:inline-block;background:#ffebee;color:#b71c1c;padding:5px 9px;border-radius:12px;font-size:12px;font-weight:bold}
+.quiz button{display:block;width:100%;margin:8px 0;padding:12px;border:1px solid #ddd;background:#fafafa;border-radius:10px;text-align:left;cursor:pointer}
+.quiz button:hover{background:#ffebee}
+#result{font-weight:bold;margin-top:12px}
+footer{text-align:center;padding:25px;color:#667085}
+.hidden{display:none}
+</style>
+</head>
+<body>
+<header>
+  <div style="font-size:42px">🇮🇩</div>
+  <h1>Proses Kelahiran Pancasila</h1>
+  <p>Media pembelajaran interaktif sejarah perumusan Pancasila</p>
+</header>
+
+<nav>
+  <button onclick="show('beranda')">Beranda</button>
+  <button onclick="show('timeline')">Timeline</button>
+  <button onclick="show('tokoh')">Tokoh</button>
+  <button onclick="show('kuis')">Kuis</button>
+</nav>
+
+<main>
+<section id="beranda">
+  <div class="card hero">
+    <div class="emoji">📚</div>
+    <h2>Belajar Kelahiran Pancasila</h2>
+    <p>Pancasila tidak lahir dalam satu hari. Perumusannya melalui beberapa tahap penting pada masa persiapan kemerdekaan Indonesia.</p>
+    <button onclick="show('timeline')" style="border:0;background:#d32f2f;color:white;padding:12px 20px;border-radius:10px;cursor:pointer">Mulai Belajar →</button>
+  </div>
+  <div class="card">
+    <h2>Ringkasan</h2>
+    <p><b>1 Juni 1945</b> — Soekarno menyampaikan gagasan dasar negara dalam sidang BPUPKI.</p>
+    <p><b>22 Juni 1945</b> — Panitia Sembilan menghasilkan Piagam Jakarta.</p>
+    <p><b>18 Agustus 1945</b> — PPKI mengesahkan UUD 1945, termasuk rumusan Pancasila dalam Pembukaan UUD 1945.</p>
+  </div>
+</section>
+
+<section id="timeline" class="hidden">
+  <div class="card">
+    <h2>🕰️ Timeline Sejarah</h2>
+    <div class="timeline">
+      <div class="event">
+        <span class="badge">29 Mei 1945</span>
+        <h3>Sidang BPUPKI dimulai</h3>
+        <p>Sidang membahas dasar negara untuk Indonesia yang akan merdeka. Beberapa tokoh menyampaikan gagasan tentang dasar negara.</p>
+      </div>
+      <div class="event">
+        <span class="badge">31 Mei 1945</span>
+        <h3>Gagasan Soepomo</h3>
+        <p>Soepomo menyampaikan pemikiran mengenai dasar negara dan konsep negara integralistik.</p>
+      </div>
+      <div class="event">
+        <span class="badge">1 Juni 1945</span>
+        <h3>Pidato Soekarno</h3>
+        <p>Soekarno menyampaikan lima dasar negara yang kemudian dikenal sebagai Pancasila. Tanggal ini diperingati sebagai Hari Lahir Pancasila.</p>
+      </div>
+      <div class="event">
+        <span class="badge">22 Juni 1945</span>
+        <h3>Piagam Jakarta</h3>
+        <p>Panitia Sembilan menyusun rumusan dasar negara dalam Piagam Jakarta.</p>
+      </div>
+      <div class="event">
+        <span class="badge">18 Agustus 1945</span>
+        <h3>Pengesahan Pancasila</h3>
+        <p>PPKI mengesahkan UUD 1945. Rumusan Pancasila tercantum dalam alinea keempat Pembukaan UUD 1945.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="tokoh" class="hidden">
+  <div class="card">
+    <h2>👤 Tokoh-Tokoh Penting</h2>
+    <ul>
+      <li><b>Ir. Soekarno</b> — menyampaikan pidato 1 Juni 1945 tentang dasar negara.</li>
+      <li><b>Drs. Mohammad Hatta</b> — berperan penting dalam proses perumusan dan pengesahan dasar negara.</li>
+      <li><b>Mr. Ahmad Soebardjo</b> — anggota Panitia Sembilan.</li>
+      <li><b>Mr. A.A. Maramis</b> — anggota Panitia Sembilan.</li>
+      <li><b>Mr. Soepomo</b> — menyampaikan gagasan dasar negara pada sidang BPUPKI.</li>
+      <li><b>Mr. Mohammad Yamin</b> — menyampaikan gagasan mengenai dasar negara dalam sidang BPUPKI.</li>
+    </ul>
+  </div>
+  <div class="card">
+    <h2>💡 Inti Pembelajaran</h2>
+    <p>Proses kelahiran Pancasila menunjukkan adanya perumusan, pembahasan, dan kesepakatan para tokoh bangsa demi menemukan dasar negara yang dapat diterima oleh seluruh rakyat Indonesia.</p>
+  </div>
+</section>
+
+<section id="kuis" class="hidden">
+  <div class="card quiz">
+    <h2>🧠 Kuis Cepat</h2>
+    <p><b>1. Kapan Soekarno menyampaikan pidato tentang dasar negara?</b></p>
+    <button onclick="answer(false)">29 Mei 1945</button>
+    <button onclick="answer(true)">1 Juni 1945</button>
+    <button onclick="answer(false)">22 Juni 1945</button>
+    <button onclick="answer(false)">18 Agustus 1945</button>
+    <p id="result"></p>
+    <hr>
+    <p><b>2. Panitia Sembilan menghasilkan dokumen yang disebut...</b></p>
+    <button onclick="answer2(true)">Piagam Jakarta</button>
+    <button onclick="answer2(false)">Proklamasi</button>
+    <button onclick="answer2(false)">Dekrit Presiden</button>
+    <button onclick="answer2(false)">Sumpah Pemuda</button>
+    <p id="result2"></p>
+  </div>
+</section>
+</main>
+
+<footer>Media Pembelajaran PPKn • Proses Kelahiran Pancasila</footer>
+
+<script>
+function show(id){
+  ['beranda','timeline','tokoh','kuis'].forEach(x=>document.getElementById(x).classList.add('hidden'));
+  document.getElementById(id).classList.remove('hidden');
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+function answer(ok){
+  document.getElementById('result').textContent=ok?'✅ Benar! 1 Juni 1945.':'❌ Belum tepat. Jawabannya 1 Juni 1945.';
+}
+function answer2(ok){
+  document.getElementById('result2').textContent=ok?'✅ Benar!':'❌ Belum tepat. Jawabannya Piagam Jakarta.';
+}
+</script>
+</body>
+</html>
